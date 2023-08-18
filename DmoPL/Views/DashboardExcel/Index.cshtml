@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a  asp-action="Export" class="btn btn-success d-flex justify-content-center align-items-center">
+    Export Employees to Excel
+</a>
+
+<hr />
+<hr />
+<div class="chart-container"> 
+    <canvas id="pieChart"></canvas>
+</div>
+
+<div class="chart-container">
+    <canvas id="lineChart"></canvas>
+</div>
+
+<script>
+    debugger;
+
+    fetch("/DashboardExcel/GetChartData").
+    then(res => res.json())
+        .then(data => {
+            console.log(data);
+            debugger;
+            createPieChart(data.pieChartLabels, data.pieChartData);
+            createLineChart(data.lineChartLabels, data.lineChartData);
+        });
+
+    function createPieChart(labels, data) {
+        debugger;
+        var pieChartCanvas = document.getElementById('pieChart').getContext('2d');
+        var pieChartData = {
+            labels: labels,
+            datasets: [{
+                data: data,
+                backgroundColor: ['red', 'blue', 'green', 'orange', 'purple']
+            }]
+        };
+        new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: pieChartData
+        });
+    }
+
+    function createLineChart(labels, data) {
+        debugger;
+        var lineChartCanvas = document.getElementById('lineChart').getContext('2d');
+        var lineChartData = {
+            labels: labels,
+            datasets: [{
+                label: 'Age',
+                data: data,
+                borderColor: 'blue',
+                fill: false
+            }]
+        };
+        new Chart(lineChartCanvas, {
+            type: 'line',
+            data: lineChartData
+        });
+    }
+</script>
+

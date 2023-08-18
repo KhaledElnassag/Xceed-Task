@@ -1,0 +1,65 @@
+﻿@model EmployeeViewModel
+
+@{
+	var Language = new SelectList(ViewData["Language"] as IEnumerable<string>);
+	var LanguageLevel = new SelectList(ViewData["LanguageLevel"] as IEnumerable<string>);
+	var Account = new SelectList(ViewData["Account"] as IEnumerable<Account>, "AccountId", "AccountName");
+	var Business = new SelectList(ViewData["BusinessLine"] as IEnumerable<BusinessLine>, "Name", "Name");
+}
+<div class="form-group">
+	<label class="col-form-label">NationalId</label>
+	<input asp-for="NationalId" class="form-control" />
+	<span asp-validation-for="NationalId" class="text-danger"></span>
+</div>
+<div class="form-group">
+		<label class="col-form-label">Name</label>
+		<input asp-for="Name" class="form-control" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+<div class="form-group">
+	<label class="col-form-label">DateofBirth</label>
+	<input id="DateId" type="date" asp-for="DateofBirth" class="form-control" />
+	<span asp-validation-for="DateofBirth" class="text-danger"></span>
+</div>
+	<div class="form-group">
+		<label class="col-form-label">Age</label>
+	    <input id="AgeId" asp-for="Age" class="form-control" readonly />
+		<span asp-validation-for="Age" class="text-danger"></span>
+	</div>
+
+	
+<div class="form-group">
+	<label class="col-form-label">Account</label>
+	<select id="AccountId" asp-for="AccountId" asp-items="@Account">
+		<option value="@null" selected>---Select Account---</option>
+	</select>
+</div>
+
+<div class="form-group">
+	<label class="col-form-label">Business</label>
+	<select id="BusinessId" asp-for="LineOfBusiness" asp-items="@Business">
+		<option value="@null" selected>---Line Of Business---</option>
+	</select>
+</div>
+
+<div class="form-group">
+	<label class="col-form-label" asp-for="Language"></label>
+	<select asp-for="Language" asp-items="@Language"></select>
+</div>
+
+<div class="form-group">
+    <label for="SelectedLanguageLevels">Language Levels</label>
+	<select id="SelectedLanguageLevels" asp-for="LanguageLevel" multiple class="form-control">
+        @foreach (var level in LanguageLevel)
+        {
+			var IsSelected = Model?.LanguageLevel?.Contains(level.Text)??false ? "selected" : "";
+			<option value="@level.Text" IsSelected >@level.Text</option>
+        }
+    </select>
+	@foreach (var selectedLevel in LanguageLevel)
+    {
+        <input type="hidden" name="SelectedLanguageLevels" value="@selectedLevel" />
+    }
+</div>
+
+	
