@@ -58,3 +58,15 @@ D:\ProjectsGithub\Task\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.dll
 D:\ProjectsGithub\Task\Xceed-Task\DemoDAL\obj\Debug\net6.0\refint\DemoDAL.dll
 D:\ProjectsGithub\Task\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.pdb
 D:\ProjectsGithub\Task\Xceed-Task\DemoDAL\obj\Debug\net6.0\ref\DemoDAL.dll
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\bin\Debug\net6.0\DemoDAL.deps.json
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\bin\Debug\net6.0\DemoDAL.dll
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\bin\Debug\net6.0\DemoDAL.pdb
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.csproj.AssemblyReference.cache
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.AssemblyInfoInputs.cache
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.AssemblyInfo.cs
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.csproj.CoreCompileInputs.cache
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.dll
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\refint\DemoDAL.dll
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\DemoDAL.pdb
+D:\Khaled\GithubProject\Xceed-Task\DemoDAL\obj\Debug\net6.0\ref\DemoDAL.dll

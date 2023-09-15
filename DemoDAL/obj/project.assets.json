@@ -2080,19 +2080,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Candle-Store\\.nuget\\packages\\": {}
+    "C:\\Users\\km37188\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProjectsGithub\\Task\\Xceed-Task\\DemoDAL\\DemoDAL.csproj",
+      "projectUniqueName": "D:\\Khaled\\GithubProject\\Xceed-Task\\DemoDAL\\DemoDAL.csproj",
       "projectName": "DemoDAL",
-      "projectPath": "D:\\ProjectsGithub\\Task\\Xceed-Task\\DemoDAL\\DemoDAL.csproj",
-      "packagesPath": "C:\\Users\\Candle-Store\\.nuget\\packages\\",
-      "outputPath": "D:\\ProjectsGithub\\Task\\Xceed-Task\\DemoDAL\\obj\\",
+      "projectPath": "D:\\Khaled\\GithubProject\\Xceed-Task\\DemoDAL\\DemoDAL.csproj",
+      "packagesPath": "C:\\Users\\km37188\\.nuget\\packages\\",
+      "outputPath": "D:\\Khaled\\GithubProject\\Xceed-Task\\DemoDAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Candle-Store\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\km37188\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2143,7 +2143,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

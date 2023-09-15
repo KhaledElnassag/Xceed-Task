@@ -15,7 +15,6 @@ namespace DemoBll.Repositories
 		private readonly MVCContext _dbContext;
 		public GenericRopsitory(MVCContext dbContext) 
 		{
-			//dbContext= new MVCContext();
 			_dbContext = dbContext;
 		}
 		public async Task Add(T Item)
